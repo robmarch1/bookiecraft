@@ -27,17 +27,21 @@ You will then be able to manually manage your matches using the following comman
 
 You can also use Bookiecraft as a library in your own plugins, enabling you to programmatically control your matches. For example, you might want to automatically start a match when a mini-game starts, and close the match when it ends. To do this, clone the project, add it as a dependency in your own project, deploy it to your server, and away you go.
 
-The easiest way to work Bookiecraft into your plugin is through the BookiecraftEventHelper (uk.co.robmarch.bookiecraft.BookiecraftEventHelper) (TODO link). This class has several static helper methods which fire the events that Bookiecraft listens for, allowing you to call functions in Bookiecraft in a nice decoupled way.
+The easiest way to work Bookiecraft into your plugin is through the [BookiecraftEventHelper](https://github.com/robmarch1/bookiecraft/blob/master/src/main/java/uk/co/robmarch/bookiecraft/util/BookiecraftEventHelper.java). This class has several static helper methods which fire the events that Bookiecraft listens for, allowing you to call functions in Bookiecraft in a nice decoupled way.
 
 ## Game Mechanics
 
-TODO SCREENSHOTS
-
 The average player will primarily interact with the Bookiecraft plugin through the */bet* and */bc* commands. Running */bc* will show the player all the information about currently ongoing matches, including who they can bet on, and whether or not betting is currently open.
+
+![Viewing Open Matches](/doc-assets/view-open-matches.PNG)
 
 They can then bet on who they think is going to win using the */bet* command. This will open the following window:
 
+![Betting Window](/doc-assets/betting-window.PNG)
+
 Once they have added the items that they're willing to put on the match into the bet window, and confirmed their bet, the items will be removed from their inventory. If they win the bet, currently they will receive double of what they bet; if they lose, the items will be gone forever.
+
+![Winnings](/doc-assets/winnings.PNG)
 
 ## Roadmap
 
