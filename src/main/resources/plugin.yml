@@ -1,0 +1,23 @@
+name: BookiecraftPlugin
+version: 1.0.0
+main: uk.co.robmarch.bookiecraft.BookiecraftPlugin
+description: Enables players to bet on the outcome of matches
+commands:
+  bet:
+    description: Places a bet on a match
+    usage: To place a bet, use /bet {match} {competitor} {amount}
+    permission: bookiecraft.bet
+    permission-message: You don't have permissions to bet on matches.
+  bookiecraft:
+    aliases: [bc]
+    description: Get information about current Bookiecraft matches
+    usage: Use /bookiecraft to get information about current matches. Use /bookiecraft [start|close|end] to manage ongoing matches.
+    permission: bookiecraft.bet
+    permission-message: You don't have permissions to bet on matches.
+permissions:
+  bookiecraft.admin:
+    description: needed to manage Bookiecraft matches
+    default: op
+  bookiecraft.bet:
+    description: needed to place a bet on a Bookiecraft match
+    default: true
